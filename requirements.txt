@@ -1,0 +1,22 @@
+# Required R packages for the Cloning UI RShiny Dashboard
+
+# Core Shiny packages
+shiny
+shinydashboard
+
+# Data manipulation and visualization
+dplyr
+ggplot2
+
+# Interactive tables
+DT
+
+# Google Cloud BigQuery integration
+bigrquery
+
+# Additional recommended packages for production deployment
+# Uncomment if needed:
+# shinymanager  # For authentication
+# shinycssloaders  # For loading animations
+# shinythemes  # For additional themes
+# plotly  # For interactive plots

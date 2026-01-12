@@ -1,0 +1,33 @@
+# R files
+.Rhistory
+.RData
+.Rproj.user
+*.Rproj
+
+# Authentication and credentials
+config.R
+*.json
+*.key
+.httr-oauth
+.credentials/
+
+# Temporary files
+*~
+.DS_Store
+*.swp
+*.swo
+
+# Log files
+*.log
+
+# Packrat
+packrat/lib*/
+packrat/src/
+
+# renv
+renv/library/
+renv/local/
+renv/staging/
+
+# rsconnect
+rsconnect/
