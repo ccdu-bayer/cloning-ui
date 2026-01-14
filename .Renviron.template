@@ -10,10 +10,17 @@ GCP_PROJECT_ID=your-gcp-project-id
 GCP_AUTH_FILE=path/to/your/service-account-key.json
 
 # BigQuery Dataset
-BIGQUERY_DATASET=your-dataset-name
+BIGQUERY_DATASET="your-dataset"
+BQ_DATASET_ID="your-dataset"
 
 # BigQuery Billing Project (usually same as GCP_PROJECT_ID)
 BIGQUERY_BILLING_PROJECT=your-gcp-project-id
 
 # Optional: Set default location for BigQuery operations
-BIGQUERY_LOCATION=US
+BIGQUERY_LOCATION="US"
+
+VAULT_SECRET_PATH="secret/path/to/your/secret/credentials" 
+VAULT_ROLE_ID="vault-app-role-id"
+VAULT_SECRET_ID="vault-app-secret-id"
+VAULT_URL="https://vault.agro.services"
+DEV_MODE=FALSE
