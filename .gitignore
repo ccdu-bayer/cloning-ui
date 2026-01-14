@@ -26,12 +26,11 @@ credentials/
 !renv.lock
 !renv/settings.json
 !config.json
-
+!renv/activate.R
+!renv/settings.dcf
 
 # Shiny deployment files
 rsconnect/
-
- 
 
 # GCP service account keys
 *-key.json

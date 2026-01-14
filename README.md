@@ -1,6 +1,30 @@
-# Cloning UI
+# Clone Selection View Dashboard
 
-R-based Shiny application to display nominated cloning data from Google Cloud BigQuery.
+Shiny dashboard for viewing selected clone data for rearray from BigQuery.
+
+## Features
+- Interactive filtering by set, source, and clone
+- Real-time data visualization
+- Export capabilities (CSV, Excel)
+- Role-based access control
+
+## Local Development Setup
+
+### Prerequisites
+- R 4.2+
+- RStudio
+- GCP service account with BigQuery access
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/ccdu-bayer/clone-selection-viewer.git
+cd clone-selection-viewer
+
+# Clone Selection Viewer
+
+R-based Shiny application to display selected clone data from Google Cloud BigQuery.
 
 ## Quick Start
 
@@ -8,12 +32,13 @@ R-based Shiny application to display nominated cloning data from Google Cloud Bi
 - R (>= 4.5.1)
 - RStudio Desktop
 - Google Cloud Platform account with BigQuery access
-- GCP service account key file (JSON)
+- GCP service account key file (JSON) for local develop/test
+- Vault account and its credentials
 
 ### Setup
 
 1. **Open the project in RStudio**
-   - Open `cloning-ui.Rproj` in RStudio
+   - Open `clone-selection-viewer.Rproj` in RStudio
 
 2. **Install dependencies**
    ```r
@@ -23,9 +48,10 @@ R-based Shiny application to display nominated cloning data from Google Cloud Bi
 3. **Configure GCP credentials**
    - Copy `.Renviron.template` to `.Renviron`
    - Update with your GCP project details and service account key path
+   - If developing in local for DEV mode, set the 
    - Restart RStudio
 
-4. **Test connection**
+4. **Test connection to BigQuery**
    ```r
    source("test_bigquery_connection.R")
    ```
@@ -36,12 +62,7 @@ R-based Shiny application to display nominated cloning data from Google Cloud Bi
    ```
 
 ## Documentation
-
-See [SETUP.md](SETUP.md) for detailed setup instructions, including:
-- Windows 11 RStudio environment configuration
-- GCP service account creation
-- BigQuery connection setup
-- Troubleshooting guide
+ 
 
 ## Project Structure
 
