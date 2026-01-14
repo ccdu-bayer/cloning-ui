@@ -1,5 +1,4 @@
-# Clone Selection View Dashboard
-
+# Clone Selection Viewer
 Shiny dashboard for viewing selected clone data for rearray from BigQuery.
 
 ## Features
@@ -7,26 +6,13 @@ Shiny dashboard for viewing selected clone data for rearray from BigQuery.
 - Real-time data visualization
 - Export capabilities (CSV, Excel)
 - Role-based access control
+- Interactive dashboard for cloning data visualization
+- Direct connection to Google BigQuery
+- Configurable environments (development, production)
+- Secure credential management
+- Reproducible package management with renv
 
 ## Local Development Setup
-
-### Prerequisites
-- R 4.2+
-- RStudio
-- GCP service account with BigQuery access
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/ccdu-bayer/clone-selection-viewer.git
-cd clone-selection-viewer
-
-# Clone Selection Viewer
-
-R-based Shiny application to display selected clone data from Google Cloud BigQuery.
-
-## Quick Start
 
 ### Prerequisites
 - R (>= 4.5.1)
@@ -34,6 +20,25 @@ R-based Shiny application to display selected clone data from Google Cloud BigQu
 - Google Cloud Platform account with BigQuery access
 - GCP service account key file (JSON) for local develop/test
 - Vault account and its credentials
+
+
+### Technology Stack
+
+- **R 4.5.1+** - Programming language
+- **Shiny** - Web application framework
+- **shinydashboard** - Dashboard components
+- **bigrquery** - BigQuery interface
+- **DT** - Interactive tables
+- **plotly** - Interactive visualizations
+- **renv** - Dependency management
+
+### Installation
+ 
+Clone the repository:
+```bash
+git clone https://github.com/ccdu-bayer/clone-selection-viewer.git
+cd clone-selection-viewer
+```
 
 ### Setup
 
@@ -60,11 +65,8 @@ R-based Shiny application to display selected clone data from Google Cloud BigQu
    ```r
    shiny::runApp()
    ```
-
-## Documentation
  
-
-## Project Structure
+#### Project Structure
 
 - `app.R` - Main Shiny application
 - `config.yml` - Application configuration
@@ -72,24 +74,5 @@ R-based Shiny application to display selected clone data from Google Cloud BigQu
 - `.Renviron.template` - Environment variable template
 - `test_bigquery_connection.R` - Connection testing script
 
-## Features
 
-- Interactive dashboard for cloning data visualization
-- Direct connection to Google BigQuery
-- Configurable environments (development, production)
-- Secure credential management
-- Reproducible package management with renv
-
-## Technology Stack
-
-- **R 4.3.2+** - Programming language
-- **Shiny** - Web application framework
-- **shinydashboard** - Dashboard components
-- **bigrquery** - BigQuery interface
-- **DT** - Interactive tables
-- **plotly** - Interactive visualizations
-- **renv** - Dependency management
-
-## License
-
-[Add your license here]
+ 
