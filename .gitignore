@@ -1,5 +1,5 @@
+
 # R specific files
- 
 .Rproj.user
 .Rhistory
 .RData
@@ -20,11 +20,18 @@ renv/staging/
 # Credentials and environment variables
 .Renviron
 .env
-
+service-account*.json
+credentials/
 # Keep configuration JSON files but exclude credentials
 !renv.lock
 !renv/settings.json
 !config.json
+
+
+# Shiny deployment files
+rsconnect/
+
+ 
 
 # GCP service account keys
 *-key.json
@@ -35,7 +42,13 @@ gcp-key*.json
 *.tmp
 *.log
 *.swp
+.httr-oauth
 *~
+# Logs
+*.log
+app_log.csv
+ 
+
 
 # OS specific
 .DS_Store
